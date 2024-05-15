@@ -92,6 +92,7 @@ class TuDienBST:
     def luu_vao_tap_tin(self, ten_tap_tin):
         with open(ten_tap_tin, 'w') as f:
             self._luu_de_quy(self.goc, f)
+        print(f"tu dien da duoc luu vao tap tin '{ten_tap_tin}' thanh cong.")    
 
     def _luu_de_quy(self, node, file):
         if node is not None:
